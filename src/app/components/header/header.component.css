@@ -1,0 +1,22 @@
+
+.logout-logo {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+}
+#logout:hover{
+    
+  cursor: pointer;
+}
+.profile-logo {
+  cursor: pointer;
+  margin-right: 18px;
+}
+.logout-text {
+  cursor: pointer;
+}
+
+.logout-logo {
+  cursor: pointer;
+  height: 31px;
+
+}

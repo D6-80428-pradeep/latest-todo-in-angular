@@ -1,0 +1,14 @@
+/* Add this CSS to your global stylesheet (e.g., styles.css) */
+
+  .app-container {
+    background-color: #f1f1f1; /* Replace with your desired background color */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Additional styles to ensure the footer sticks to the bottom */
+  .app-container app-footer {
+    margin-top: auto;
+  }
+  

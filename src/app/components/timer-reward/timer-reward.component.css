@@ -1,0 +1,16 @@
+.right-corner-container {
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    width: 550px; /* Adjust the width as needed */
+    background-color: rgb(247, 247, 247);
+}
+
+.logout-logo {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+}
+
+h5 {
+    margin-bottom: 50px;
+}

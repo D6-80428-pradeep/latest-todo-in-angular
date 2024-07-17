@@ -1,0 +1,28 @@
+.task-container {
+  max-width: 780px;
+  width: 100%;
+  position: absolute;
+  top: 125px;
+  left: 30px;
+  box-shadow: 9px 4px 8px rgba(0, 0, 0, 1.9)
+}
+
+.task-list-container {
+  max-height: 382px; /* Adjust as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 10px; /* Space between add task and task list */
+}
+
+.list-group-item {
+  padding: 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+}
+
+.task-title {
+  font-size: 16px;
+}
+.logout-logo {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+}

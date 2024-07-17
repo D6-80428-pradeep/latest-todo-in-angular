@@ -1,0 +1,38 @@
+<header class="bg-light-subtle text-bg-dark p-2 d-flex justify-content-between align-items-center shadow-lg">
+  <div>
+    <img src="../../../../assets/to-do-list (1).png" alt="Logo" style="height: 40px;">
+  </div>
+  <div>
+    <button class="btn btn-primary">Register</button>
+  </div>
+</header>
+
+<div class="container-fluid vh-100 d-flex flex-column">
+  <div class="d-flex flex-grow-1 justify-content-center align-items-center">
+    <div class="card shadow-lg p-4" style="width: 25rem;">
+      <div class="text-center mb-4">
+        <img src="../../../../assets/—Pngtree—internet seo marketing data login_6379580.png" alt="Login Illustration" style="height: 150px;">
+      </div>
+      <form [formGroup]="loginForm" (ngSubmit)="login(txtemail.value, txtpassword.value)">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" class="form-control" formControlName="email" #txtemail>
+          <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="text-danger">
+            Valid email is required.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" id="password" class="form-control" formControlName="password" #txtpassword>
+          <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="text-danger">
+            Password is required (minimum 6 characters).
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4 w-100">Login</button>
+        <div class="text-center mt-3">
+          <small><a routerLink="../forgot-password" (click)="forgotPassword()">Forgot Password?</a></small>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

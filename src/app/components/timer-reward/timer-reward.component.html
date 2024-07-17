@@ -1,0 +1,18 @@
+<div class="right-corner-container  shadow p-4 rounded text-center">
+  <h1 >{{ currentTime | date: 'HH:mm' }}</h1>
+  <h4 class="mb-5">{{ currentTime | date: 'd MMMM y' }}</h4>
+  <div class="d-flex justify-content-center mt-2">
+    <div class="nav-buttons d-flex justify-content-between w-100" style="max-width: 700px;">
+      <button id="prevButton" class="btn btn-light" (click)="prevDay()" data-bs-toggle="tooltip" title="Prev Day">
+        <img src="../../../assets/black-triangular-arrowhead-pointing-left-direction_45050.png" alt="Prev Day"
+          class="logout-logo">
+      </button>
+      <p class="m-0" style="font-size: 18px;">{{ currentTime | date: 'fullDate' }}</p>
+      <button id="nextButton" class="btn btn-light" (click)="nextDay()" data-bs-toggle="tooltip" title="Next Day">
+        <img src="../../../assets/media-play-symbol_31128.png" alt="Next Day" class="logout-logo">
+      </button>
+    </div>
+  </div>
+  <p>Current Points: {{ points }}</p>
+  <p>Complete tasks on time to earn more points!</p>
+</div>

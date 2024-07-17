@@ -1,0 +1,15 @@
+/* Add any additional styling needed here */
+.container-fluid {
+    background-color: #dddddd;
+  }
+  .card {
+    border-radius: 10px;
+  }
+  .header img {
+    height: 40px;
+  }
+  .header .btn {
+    margin-left: 10px;
+  }
+ 
+  

@@ -1,0 +1,8 @@
+<div class="upcoming-task-container bg-light border rounded shadow p-3">
+  <h3>Recently Completed Tasks</h3>
+  <ul class="list-group mt-3">
+    <li *ngFor="let task of upcomingTasks" class="list-group-item">
+      {{ task.title }}
+    </li>
+  </ul>
+</div>
